@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Beauty/Cabelos</title>
+    <link rel="Stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+<!-- cabecalho -->
+<header class="header">
+    <h1>Natural Beauty</h1>
+
+    <div class="buscar">
+        <form action=" "method="post"> 
+            <label for="busca">Buscar</label>
+            <input type="search" id="busca" name="q">
+            <button type="submit">OK</button>
+        </form>
+    </div>   
+    <br>     
+</header> 
+
+<div class="row5"> 
+<!--Contêiner de apresentação de slides -Slideshow container-->
+<div class="slideshow-container">
+
+<!--Imagens de largura total com número e texto de legenda opcional-Full-width images with number and caption text-->
+<div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+      <img src="imagens/NaturalBeauty-banner01.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="imagens/Natural-banner02.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="imagens/Natural-banner03.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <!-- Botoes seguinte e anterior-Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</div>
+<div class="menu">
+    <a href="#">Home</a>
+    <a href="#">Cabelos</a>
+    <a href="#">Maquiagem</a>
+    <a href="#">Pele</a>
+    <a href="#">Óleos</a> 
+</div>
+
+<br><br>
+
+<!-- corpo-->
+
+<div class="salesmenu">
+  <a href="ofertas.html">OFERTAS</a> 
+   
+</div>
+
+<div class="row">
+    <div class="esquerda">
+        <img class="displayed" src="imagens/shampoo-maracuja-manga.png" alt="Imagem de Shampoo de Manga e Maracujá">
+        <div class="shampoo"><a href="ofertas.html">Shampoo de Manga e Maracujá</a></div><center>
+        <h4>R$ 56,99</h4>
+        <input type="submit" value="Adicionar ao carrinho" class="button"></center>            
+    </div>
+
+    <div class="centro">
+        <img class="displayed" src="imagens/creme-calendula-papaya.png" alt="Imagem de Creme de Papaya e Calêndula">
+        <div class="cremepapaya"><a href="ofertas2.html">Creme de Papaya e Calêndula</a></div><center>
+        <h4>R$ 64,99</h4>
+        <input type="submit" value="Adicionar ao carrinho" class="button"></center>                        
+    </div>
+
+    <div class="direita">
+        <img class="displayed" src="imagens/batom-morango-karite.png" alt="Imagem de Batom de Morango e Manteiga de Karité">
+        <div class="batom"><a href="ofertas3.html">Batom de Morango e Manteiga de Karité</a></div><center>
+        <h4>R$ 52,99</h4>
+        <input type="submit" value="Adicionar ao carrinho" class="button">         
+    </div> 
+</div> 
+<br><br>
+
+<div class="row2">
+    <div class="bannerform">
+    <img class="displayed" src="imagens/Veganoform2.png" alt="Produtos Veganos">    
+    </div>
+    <div class="formulario">
+    <h3>Newslatter</h3>
+    <h4>Receba nossas ofertas e descontos especiais</h4>
+    <form action="" method="POST" name="formulario" onsubmit="return validar(this);">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <span class="msg-erro msg-nome"></span>
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email">
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone">
+        <input type="submit" value="Enviar" class="button02">                                    
+    </form>
+</div>
+</div>
+
+<div class="bannerfinal">
+    <img  class="displayed" src="imagens/banerfinal02.png" alt="Banner de Compromisso com a Natureza">
+</div> 
+
+<!--rodape-->
+<footer class="footer">
+    <div class="row3">
+        <div class="esquerda2">        
+            <img class="displayed" src="imagens/logo04.png"  alt="Imagem dos cartões de pagamentos">   
+        </div>
+
+        <div class="centro2">
+            <h3>INSTITUCIONAL</h3>
+            <ul id="nav">
+                <li><a href="#">Nossa História</a></li>
+                <li><a href="#">Nossos Valores</a></li>
+                <li><a href="#">Blog da Natural Beauty</a></li>
+                
+            </ul>                  
+        </div>
+
+        <div class="direita2">
+            <h3>PAGUE COM</h3>
+            <img class="displayed" src="imagens/Pagamento1.jpg"  alt="Imagem dos cartões de pagamentos"><br>
+            <img class="displayed" src="imagens/Pagamento2.jpg"  alt="Imagem dos cartões de pagamentos">  
+                       
+        </div>
+       
+    </div>
+</footer>
+
+<script src="js.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

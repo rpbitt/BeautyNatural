@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #7ea171;
+    color: #911d0e;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #377449;
+}
+
+.buscar {
+    text-align: right;
+    float: right;
+    background-position: right;
+    background-size: cover;
+    color: #000000;     
+}
+
+.menu {
+    display: flex;
+    background-color: #daa663;
+    
+}
+
+.menu a{
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #06f74e;
+    text-decoration: underline;
+}
+
+/* posso tratar as classes de acordo com a resolucao da tela */
+@media screen and (max-width: 700px) {
+    .row .menu .row2 .row3 .row4{
+        flex-direction: column;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sale {
+    flex: 50%;
+    background-color: #ede0f7;
+    padding: 20px;   
+}
+
+.comprar {
+    flex: 50%;
+    background-color: #f5f0f3fd;
+    padding: 20px;
+    text-align: justify;     
+}
+
+IMG.displayed { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.bannerxampu { 
+    width: 100%;
+    height: 300%;
+    position: "center";
+}  
+
+.button {
+    background-color: #ee400b;
+    color: white;
+    padding: 10px 25px; 
+    text-align: center;
+    border-radius: 15px;
+    font-size: 16px;
+    width: 200px;    
+}
+
+/*Rodapé*/
+.footer {
+    padding: 40px;
+    background-color: #377449;     
+}
+/*Rodapé*/
+.row3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Rodapé*/
+.esquerda2 {
+    flex: 33%;
+    background-color: #377449;
+    padding: 20px;
+}
+/*Rodapé*/
+.centro2 {
+    flex: 33%;
+    background-color: #377449;
+    padding: 20px;
+}
+/*Rodapé*/
+.direita2 {
+    flex: 33%;
+    background-color: #377449;
+    padding: 20px;
+} 
+/*Rodapé*/
+li ul {
+    position: absolute;
+    left: 149px;
+    top: 0;
+    display: none;
+}
+
+.row4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.centro2 {
+    color: #ffffff;
+    text-decoration: none; 
+}
+
+.centro2 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.direita2 {
+    color: #ffffff;
+}

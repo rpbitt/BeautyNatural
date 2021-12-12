@@ -1,0 +1,389 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header{
+    padding: 25px;
+    text-align: center;
+    background-color: #7ea171;
+    color: #911d0e;
+}
+
+.buscar{
+    text-align: right;
+    float: right;
+    background-position: "right";
+    background-size: "cover";
+    color: #000000;     
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;    
+}
+  
+  /* Hide the images by default - Ocultar as imagens por padrão*/
+.mySlides {
+    display: none;
+}
+  
+  /* Next & previous buttons - Botoes seguintes e anterior */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+  /* Position the "next button" to the right - Posicione o proximo botao a direita */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through - Ao passar o mouse, adicione uma cor de fundo preta com um pouco de transparencia */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+  /* Caption text - Texto da legenda*/
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+  /* Number text (1/3 etc) - Texto numerico */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+  /* The dots/bullets/indicators - Os pontos/marcadores/indicadores */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+  /* Fading animation - Amimação de desvanecimento*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.menu{
+    display: flex;
+    background-color: #daa663;     
+}
+
+.menu a {
+    color: #f00a0a;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #06f74e;
+    text-decoration: underline; 
+}
+
+.salesmenu {
+    display: flex;
+    background-color: #f3f17d;       
+}
+
+.salesmenu a {
+    color: #1c2281;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.salesmenu a {
+    text-transform: uppercase;
+    color: #0a0a0a;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;     
+}
+
+.salesmenu a:hover {
+    color: #f70606;
+    text-decoration: underline;
+}
+
+
+/* posso tratar as classes de acordo com a resolucao da tela */
+@media screen and (max-width: 700px) {
+    .row .menu .row2 .row3 .row4 .row5{
+        flex-direction: column;
+    }
+}
+
+.row5 {
+    display: flex;
+    flex-wrap: wrap;
+    background: #7ea171;      
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;      
+}
+
+.esquerda {
+    flex: 33%;
+    background-color: #f7f1f8;
+    padding: 30px;
+}
+
+.centro {
+    flex: 33%;
+    background-color: #f7fcd8;
+    padding: 30px;
+}
+
+.direita {
+    flex: 33%;
+    background-color: #dff7e8fd;
+    padding: 20px;
+}
+
+IMG.displayed { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.shampoo {
+    display: flex;
+    background-position: center;    
+}
+
+.shampoo a {
+    color: #7fe061;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.shampoo a {
+    text-transform: uppercase;
+    color: #0f0f0f;
+    text-align: center;
+    text-decoration: none;
+}
+
+.shampoo:hover {
+    color: #f70606; 
+    text-decoration: underline;
+} 
+
+.cremepapaya {
+    display: flex;
+    background-position: center;
+}
+
+.cremepapaya a {
+    color: #7fe061;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cremepapaya a {
+    text-transform: uppercase;
+    color: #0f0f0f;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cremepapaya:hover {
+    color: #f70606; 
+    text-decoration: underline;
+} 
+
+.batom {
+    display: flex;
+    background-position: center;    
+}
+
+.batom a {
+    color: #7fe061;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.batom a {
+    text-transform: uppercase;
+    color: #0f0f0f;
+    text-align: center;
+    text-decoration: none;
+}
+
+.batom:hover {
+    color: #f70606; 
+    text-decoration: underline;
+} 
+
+.button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 25px; 
+    text-align: center;
+    border-radius: 15px;
+    font-size: 12px;
+    width: 200px;    
+}
+
+.msg-erro{
+    color: red;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formulario {
+    flex: 60%;
+    background-color:#edf5c3;
+    padding: 45px;
+    text-align: center;     
+}
+
+*input {
+    width: 100%;      
+}
+
+.button02 {
+    background-color: #f17908;
+    color: white;
+    padding: 3px 10px;
+    text-align: center;
+    font-size: 16px;
+} 
+
+.bannerfinal { 
+    width: 100%;
+    height: 100%;
+    position: "center";
+}     
+
+/*Rodapé*/
+.footer{
+    padding: 40px;
+    background-color: #377449;
+    
+}
+/*Rodapé*/
+.row3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Rodapé*/
+.esquerda2 {
+    flex: 33%;
+    background-color: #377449;
+    padding: 20px;
+}
+/*Rodapé*/
+.centro2 {
+    flex: 33%;
+    background-color: #377449;
+    padding: 20px;
+}
+/*Rodapé*/
+.direita2 {
+    flex: 33%;
+    background-color: #377449;
+    padding: 20px;
+}
+
+/*Rodapé*/
+li ul {
+    position: absolute;
+    left: 149px;
+    top: 0;
+    display: none;
+}
+
+.row4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.centro2{
+    color: #ffffff;
+    text-decoration: none; 
+    
+}
+
+.centro2 a {
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+.direita2 {
+    color: #ffffff;
+}
+
+
+
+
